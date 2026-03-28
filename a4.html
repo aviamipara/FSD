@@ -1,0 +1,25 @@
+<!-- clearInterval -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(a,b){
+            document.getElementById("demo").innerHTML=(a+b)
+            if ((a+b)>20){
+                clearInterval(timer)
+            }
+        }
+        a=5
+        b=2
+
+        timer=setInterval(function(){add(++a,++b)},1000)
+    </script>
+</head>
+<body>
+    <p id="demo"></p>
+</body>
+</html>
