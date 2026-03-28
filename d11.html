@@ -1,0 +1,24 @@
+<!-- 
+     write one json string with date property and print date in indian stander type while click in on button 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(){
+            let text='{"name":"abc","place":"Ahmedabad","DOB":"2006-09-24"}' // date always in (yyyy-mm-dd)
+            let obj=JSON.parse(text)
+            obj.DOB=new Date(obj.DOB)
+            document.getElementById("demo").innerHTML="Birthday of "+obj.name+" is "+obj.DOB
+        }
+    </script>
+</head>
+<body>
+    <p id="demo"></p>
+    <button onclick="fun()">Show</button>
+</body>
+</html>

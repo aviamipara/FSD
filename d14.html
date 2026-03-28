@@ -1,0 +1,28 @@
+<!-- 
+ Write a code to fetch the values of keys and print a sentence as “Hi! We are students of semester 4 of CSE branch” in h1 tag on browser.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let obj={
+            "A" : "LJU",
+            "B" : ["CSE", "IT" , "CE"],
+            "C" : [{ "D" : "Hi","E" : ['are', 4, {'F' : ['semester', 'We']} ] }],
+            "G" : {"H" : "students","I" : ["of","!"]},
+            "J" : [{"K" :"Python", "L":"branch"},"FSD-2"]
+        }
+
+        console.log(obj.C[0].D+""+obj.G.I[1]+" "+obj.C[0].E[2].F[1]+" "+obj.C[0].E[0]+" "+obj.G.H+" "+obj.G.I[0]+" "+obj.C[0].E[2].F[0]+" "+obj.C[0].E[1]
+                  +" "+obj.C[0].E[2].F[0]+" "+obj.B[0]+" "+obj.J[0].L)
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
