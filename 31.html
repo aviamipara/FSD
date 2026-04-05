@@ -1,0 +1,31 @@
+<!-- Write a script to define two JSON objects named as “division1” and 
+“division2” having an array to store names of students. These name 
+should be sorted alphabetically in the object and should be be written 
+to the file. At last, both division objects should be visible with names 
+sorted alphabetically in file -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+           let data = {
+           division1: ["Karan", "Avi", "Neha", "Riya", "Rahul"],
+           division2: ["Vikas", "Pooja", "Ankit", "Sneha", "Arjun"]
+        };
+
+        data.division1.sort();
+        data.division2.sort();
+
+        fs.writeFileSync("students.json", JSON.stringify(data, null, 4));
+
+        console.log("Sorted Data Written to File:");
+        console.log(data);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!-- Write one JSON string with date property (yyyy-mm-dd) and print 
+date in India standard time.  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let data = '{"date": "2024-05-10"}';
+
+        let obj = JSON.parse(data);
+
+        let date = new Date(obj.date);
+
+        let istDate = date.toLocaleString("en-IN", { timeZone: "Asia/Kolkata" });
+
+        console.log("Date in IST:", istDate);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

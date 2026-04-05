@@ -1,0 +1,35 @@
+<!-- Create a JSON object named Home Expenses in which you have to 
+add monthly expenses of transport , food bill and names of different 
+family members including mother,father,brother and sister.Print the 
+expenses of father with his name -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+            let data = {
+            HomeExpenses: {
+                transport: 3000,
+                food: 8000,
+                family: {
+                mother: { name: "Meena", expense: 2000 },
+                father: { name: "Ramesh", expense: 4000 },
+                brother: { name: "Amit", expense: 1500 },
+                sister: { name: "Neha", expense: 1200 }
+                }
+            }
+            };
+
+
+            let father = data.HomeExpenses.family.father;
+
+            console.log("Father Name:", father.name);
+            console.log("Father Expense:", father.expense);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

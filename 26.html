@@ -1,0 +1,45 @@
+<!-- Write a JSON script to store information related to books based on 
+their id, topic,edition and author. (Minimum details of three books 
+having id=1,2,3) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let obj={
+                "books": [
+                    {
+                    "id": 1,
+                    "topic": "Data Structures",
+                    "edition": "3rd",
+                    "author": "Seymour Lipschutz"
+                    },
+                    {
+                    "id": 2,
+                    "topic": "Operating System",
+                    "edition": "2nd",
+                    "author": "Galvin"
+                    },
+                    {
+                    "id": 3,
+                    "topic": "Database Management System",
+                    "edition": "5th",
+                    "author": "Korth"
+                    }
+                ]
+            }
+    for (i of  obj.books){
+        console.log(i.id)
+        console.log(i.topic)
+        console.log(i.edition)
+        console.log(i.author)
+    } 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

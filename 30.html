@@ -1,0 +1,33 @@
+<!-- Write a JS to store an array of objects having height and name. 
+display name and height of person with highest height.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let people = [
+                { name: "Avi", height: 170 },
+                { name: "raj", height: 165 },
+                { name: "Karan", height: 180 },
+                { name: "Nitesh", height: 172 }
+        ];
+
+        let tallest = people[0];
+
+        for (let i = 1; i < people.length; i++) {
+                if (people[i].height > tallest.height) {
+                    tallest = people[i];
+                }
+        }
+
+        console.log("Tallest Person:");
+        console.log("Name:", tallest.name, "Height:", tallest.height);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
