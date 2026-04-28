@@ -1,0 +1,5 @@
+const expr=require("express")
+const app=expr()
+var m1=require("./data")
+app.use("/k",m1)
+app.listen(8092)
