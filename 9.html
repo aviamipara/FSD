@@ -1,0 +1,32 @@
+<!-- 
+
+          Session
+
+    Syntax :
+            app,use(es({
+              secret : value,
+              resave : false,
+              saveUninitialized : false }))
+-->
+
+<!-- write express code to meet the folowing reqment create index.html file which contains a form of user 
+name password & login button sarve it on the home page after clicking a login button it should jummp to 
+save session page user name and password after svaing this redirect to fetch session page read the value 
+display the value and priovid a logout link if user click on logout link delete the session and redirect 
+to home page.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/savesession" method="get">
+        <input type="text" name="uname">Name <br>
+        <input type="password" name="pwd">Password <br>
+        <input type="submit" value="login">
+    </form>
+</body>
+</html>

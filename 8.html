@@ -1,0 +1,22 @@
+<!-- write an expressJs click to set cookies of submited values of form 
+
+1.create html file that contains a form of __filename,lname,password & submit button onecs the form submited 
+  stored all this enterd values to the respective cookies on /next page then re direct user to /admin page cleare 
+  cookie set for last name and display remaining cookie using post methods -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/next" method="post">
+        <input type="text" name="fname">
+        <input type="text" name="lname">
+        <input type="password" name="pwd">
+        <input type="submit">
+    </form>
+</body>
+</html>
