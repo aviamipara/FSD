@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Discount Calculator</title>
+</head>
+<body>
+    <h2>Discount Calculator</h2>
+    <form action="/discount" method="POST">
+        <label>Product Price:</label><br>
+        <input type="number" name="price" step="0.01"><br><br>
+
+        <label>Discount Percentage:</label><br>
+        <input type="number" name="discount_pct" step="0.01"><br><br>
+
+        <label>Offer Type:</label><br>
+        <select name="offer_type">
+            <option value="">-- Select Offer --</option>
+            <option value="Festival Offer">Festival Offer</option>
+            <option value="Seasonal Offer">Seasonal Offer</option>
+            <option value="Clearance Sale">Clearance Sale</option>
+        </select><br><br>
+
+        <button type="submit">Calculate Discount</button>
+    </form>
+</body>
+</html>
