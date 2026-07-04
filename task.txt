@@ -1,0 +1,18 @@
+create a collaction name having feild name, age and persentage inser 5 to 10 randome doc in this collaction 
+1.find name of all student hgaving age >5
+2.increse the standered for all student by 1 
+3.arrange all the recotrds in desending order of age
+4.show the name of student who is oldest setudent among all the students
+5.delete a record of student if standered is 12
+
+{name:"Avi",age:19,std:12,percentage:85}
+
+
+
+
+
+complete a pipe eample using aggregate frame work 
+1.group student base on there city 
+2.calaulate avg marks of student in each city
+3.sort the city in desending order of avg marks
+4.display only city and avg marks
